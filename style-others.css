@@ -1,0 +1,154 @@
+@font-face{
+	font-family:微软雅黑;
+	src:url(font/微软雅黑.ttf);
+}
+body{
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-smoothing:antialiased;
+	/*background-color: #ebeeea;*/
+}
+a:visited{
+	color: #333;
+	text-decoration: none;
+}
+.navbar{
+	border-radius: 0;
+}
+.navbar-default{
+	background-color: #193f0e;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 9999;
+	
+}
+.navbar-hide{
+	transform: translateY(-50px);
+	transition: all 0.3s ease-in-out;
+}
+/*导航栏左上角*/
+.navbar-default .navbar-brand{
+	color: white;
+	font-family: arial;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+	transition: all 0.5s;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover{
+	color: #e5a636;
+}
+/*.navbar-custom{
+	background: rgba(0, 0, 0, 0.95);
+	border-radius: 0;
+	border-bottom: 1px solid #ddd;
+	color: #666;
+}*/
+.navbar-default .navbar-nav>.li.active>a, 
+.navbar-default .navbar-nav>.li.active>a:focus, 
+.navbar-default .navbar-nav>.li.active>a:hover{
+	background: none;
+	font-weight: 600;
+	color: #e5a636;
+}
+
+
+
+.navbar-default .navbar-nav>li>a{
+	color:white;
+}
+/*.navbar-default .navbar-nav>li>a:visited{
+	color: white;这行代码的位置一定要放对
+}*/
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active{
+	color: #e5a636;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav>.li.active {
+	font-weight: 600;
+	color: #e5a636;
+}
+
+
+.to-top{
+	width:44px;
+	height: 44px;
+	text-align: center;
+	line-height: 40px;
+	color: #666;
+	font-family: Dinpro;
+	font-weight: bold;
+	border-radius: 22px;
+	border:1px solid #ddd;
+	background: #fff;
+	box-shadow: 0 2px 5px #ddd;
+	position: fixed;
+	right: 30px;
+	bottom: 10%;
+	/*background-image: url(../imgs/to-top-icon.svg);*/
+	/*background-size: cover;*/
+}
+.to-top:hover{
+	background: #193f0e;
+	color: #e5a636;
+}
+
+h3{
+	margin-top: 140px;
+	/*margin-bottom: 40px;*/
+	font-size: 24px;
+	color: #e5a636;
+	text-align: center;
+}
+.masonry{
+	/*position: relative;*/
+	width: 1280px;
+	/*height: 3000px;*/
+	margin: 40px auto;
+	/*padding: 200;*/
+	/*column-count: 3;*/
+	column-gap: 0;
+	/*background: #333;*/
+}
+.item{
+	/*background: #999;*/
+	break-inside: avoid;
+	box-sizing: border-box;
+	color: white;
+	padding: 10px;
+
+	transition: all 0.3s ease-in-out;
+	/*border: 1px solid red;*/
+}
+.item:hover img{
+	transform: translateY(-10px);
+	box-shadow: 2px 2px 12px lightblue;
+	transition: all 0.3s ease-in-out;
+}
+.item img{
+	display: block;
+	margin: auto;
+}
+/*.item4{
+	width: 375px;
+	height: 200px;
+}*/
+.masonry { 
+    column-count: 1; /*// one column on mobile*/ 
+} 
+@media (min-width: 700px) { 
+    .masonry { 
+        column-count: 2; /*// two columns on larger phones */
+    } 
+} 
+@media (min-width: 1200px) { 
+    .masonry { 
+        column-count: 3; /*// three columns on...you get it */
+    } 
+} 

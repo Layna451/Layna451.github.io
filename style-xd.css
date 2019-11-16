@@ -1,0 +1,90 @@
+@font-face{
+	font-family:微软雅黑;
+	src:url(font/微软雅黑.ttf);
+}
+body{
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-smoothing:antialiased;
+	/*background-color: #ebeeea;*/
+}
+a:visited{
+	color: #333;
+	text-decoration: none;
+}
+.navbar{
+	border-radius: 0;
+}
+.navbar-default{
+	background-color: #193f0e;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 9999;
+}
+/*导航栏左上角*/
+.navbar-default .navbar-brand{
+	color: white;
+	font-family: arial;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+	transition: all 0.5s;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover{
+	color: #e5a636;
+}
+/*导航栏右上角*/
+.navbar-default .navbar-nav>.li.active>a, 
+.navbar-default .navbar-nav>.li.active>a:focus, 
+.navbar-default .navbar-nav>.li.active>a:hover{
+	background: none;
+	font-weight: 600;
+	color: #e5a636;
+}
+.navbar-default .navbar-nav>li>a{
+	color:white;
+}
+/*.navbar-default .navbar-nav>li>a:visited{
+	color: white;这行代码的位置一定要放对
+}*/
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active{
+	color: #e5a636;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+.navbar-default .navbar-nav>.li.active {
+	font-weight: 600;
+	color: #e5a636;
+}
+
+
+.container{
+	width: 1200px;
+	/*background: #333;*/
+	/*padding: 200px 0px;*/
+	margin: 120px auto;
+	align-items: center;
+	box-sizing: border-box;
+	color: #e5a636;
+	text-align: center;
+}
+h3{
+	margin-bottom: 40px;
+}
+.item{
+	width: 100%;
+	height: 680px;
+	background: #666;
+	margin: 1% 0;
+	float: left;
+	transition: all 0.3s ease-in-out;
+}
+.item:hover{
+	box-shadow: 2px 2px 12px lightblue;
+	transform: translateY(-10px);
+	transition: all 0.3s ease-in-out;
+}
