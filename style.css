@@ -1,0 +1,270 @@
+@font-face{
+	font-family:微软雅黑;
+	src:url(font/微软雅黑.ttf);
+}
+body{
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-smoothing:antialiased;
+	/*background-color: #ebeeea;*/
+}
+a:visited{
+	color: #333;
+	text-decoration: none;
+}
+.col-xs-12, .col-sm-6, .col-md-4, .col-lg-3{
+	padding: 0px;
+}
+.content{
+	/*background-color: #ebeeea;*/
+}
+.navbar{
+	border-radius: 0;
+}
+.navbar-default{
+	background-color: #193f0e;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 9999;
+	
+}
+.navbar-hide{
+	transform: translateY(-50px);
+	transition: all 0.3s ease-in-out;
+}
+/*导航栏左上角*/
+.navbar-default .navbar-brand{
+	color: white;
+	font-family: arial;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+	transition: all 0.5s;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover{
+	color: #e5a636;
+}
+/*.navbar-custom{
+	background: rgba(0, 0, 0, 0.95);
+	border-radius: 0;
+	border-bottom: 1px solid #ddd;
+	color: #666;
+}*/
+.navbar-default .navbar-nav>.li.active>a, 
+.navbar-default .navbar-nav>.li.active>a:focus, 
+.navbar-default .navbar-nav>.li.active>a:hover{
+	background: none;
+	font-weight: 600;
+	color: #e5a636;
+}
+
+
+
+.navbar-default .navbar-nav>li>a{
+	color:white;
+}
+/*.navbar-default .navbar-nav>li>a:visited{
+	color: white;这行代码的位置一定要放对
+}*/
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active{
+	color: #e5a636;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav>.li.active {
+	font-weight: 600;
+	color: #e5a636;
+}
+
+
+.to-top{
+	width:44px;
+	height: 44px;
+	text-align: center;
+	line-height: 40px;
+	color: #666;
+	font-family: Dinpro;
+	font-weight: bold;
+	border-radius: 22px;
+	border:1px solid #ddd;
+	background: #fff;
+	box-shadow: 0 2px 5px #ddd;
+	position: fixed;
+	right: 30px;
+	bottom: 10%;
+	/*background-image: url(../imgs/to-top-icon.svg);*/
+	/*background-size: cover;*/
+}
+.to-top:hover{
+	background: #193f0e;
+	color: #e5a636;
+}
+
+/*a:hover,
+a:focus,
+a:active{
+	color: #e5a636;
+}*/
+
+
+/*这段代码是btn-group相关*/
+.btn-group-container{
+	margin: 40px auto;
+	text-align: center;
+}
+.btn-group-container>.btn-group{
+	padding: 10px 24px;
+	margin: 6px;
+	border-radius: 24px;
+	border: 1px solid #ddd;
+	transition: all 0.3s;
+}
+.btn-group-container>.btn-group.active{ /*注意这里的写法.btn-group和.active之间没有任何空隙和符号*/
+	background-color: #193f0e;
+	color: #e5a636;
+	font-weight: 700;
+	border: 1px solid #193f0e;
+	transition: all 0.3s;
+}
+.btn-group-container>.btn-group:hover{
+	background-color: #193f0e;
+	color: #e5a636;
+	font-weight: 700;
+	border: 1px solid #193f0e;
+	transition: all 0.3s;
+}
+
+.welcome{
+	text-align: center;
+	margin: 140px auto 40px auto;
+	/*margin: 0 auto;*/
+}
+.welcome{
+	font-size: 20px;
+	color: #e5a636;
+}
+
+
+/*以下是中间内容部分动效设置*/
+.item{
+	color: #000;
+	text-align: center;
+	cursor: pointer;
+}
+.project{
+	width: 290px;
+	height: 290px;
+	background: white;
+	background-size: contain;
+	background-position: 50% 70px;
+	background-repeat: no-repeat;
+	/*margin: 0 10px 20px 10px;*/
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+}
+.project-container{
+	background: transparent;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	padding: 16px 12px;
+	transition: all .3s ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+.project:hover .project-container{
+	/*background: rgba(25,63,14,.6);*/
+	background: rgba(229,166,54,1);
+}
+.project:hover .project-container>.pro-title{
+	color:#333;
+	padding-top: 70px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all .3s ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+.pro-title-change{
+	color: white;
+}
+.animation, .frontend, .vi, .others, .illustrations{
+	background-size: cover;
+	background-position: center;
+}
+
+.project-container>.pro-txt{
+	display: none;
+}
+.project:hover .project-container>.pro-txt{
+	color:#333;
+	padding-top: 10px;
+	display: block;
+	transition: all .3s ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+.bg{
+	width: 100%;
+	background-color: white;
+	padding: 10px 0;
+}
+
+
+/*以下是尾部内容*/
+.intro-container{
+	margin-top:140px;
+	/*background: #333;*/
+	color: #333;
+	display: flex;
+}
+/*.intro-container::after{
+	content: "";
+	display: block;
+	clear: both;
+}*/
+.intro-container>.intro-img{
+	background: url(img/me.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-right: 10px;
+}
+.intro-container>.intro-text{
+	width: 40%;
+	margin: 0 auto;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.footer{
+	/*margin-top: 40px;*/
+	padding: 40px 0;
+	color: #999;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1392px){
+	.intro-container>.intro-img{
+		width: 0;
+	}
+}
+@media screen and (max-width: 500px){
+	.btn-group-container, .welcome{
+		width: 300px;
+	}
+}
+@media screen and (min-width: 501px) and (max-width: 1000px){
+	.btn-group-container, .welcome{
+		width: 500px;
+	}
+}
+
